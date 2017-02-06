@@ -1,9 +1,7 @@
 - hosts: all
+  become: true
   tasks:
    - name: Hi. I ensure connecting to the machine
      ping:
    - name: Run Docker bibinwilson slave
-     docker:
-      image: bibinwilson/jenkins-slave
-      name: DockerContainer
-      state: running
+     shell: sudo docker run bibinwilson/jenkins-slave --name slave_ansible
