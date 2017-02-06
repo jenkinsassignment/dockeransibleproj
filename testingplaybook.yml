@@ -3,4 +3,4 @@
    - name: Hi. I ensure connecting to the machine
      ping:
    - name: Run Docker bibinwilson slave
-     shell: sudo docker run bibinwilson/jenkins-slave --name slave_ansible
+     shell: sudo docker run bibinwilson/jenkins-slave
