@@ -1,12 +1,14 @@
-- hosts: all
+- hosts: docker-slave
   tasks:
    - name: Hi. I ensure connecting to the Docker machine
      ping:
-   - name: Create slave Docker bibinwilson
+- hosts: jenkins-master
+  tasks:
+   - name: Create slave Docker bibinwilson 
      docker_container:
       docker_host: "tcp://192.168.2.204:4243"
       image: bibinwilson/jenkins-slave
       state: present
       name: dockerslave
-   - name: Run the build inside the Docker slave
+   - name: Run the build inside the Docker slave  
      shell: "java -jar jenkins-cli.jar -s tcp://192.168.2.204:4243 build builds/$BUILD_NUMBER --username jenkins --password jenkins"
