@@ -1,8 +1,3 @@
-[docker-slave]
-192.168.2.204
-[docker-slave:vars]
-ansible_ssh_user=vagrant
-ansible_ssh_pass=vagrant
 [jenkins-master]
 192.168.1.145
 [jenkins-master:vars]
