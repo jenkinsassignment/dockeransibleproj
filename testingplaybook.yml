@@ -9,5 +9,4 @@
       state: present
       name: dockerslave
    - name: Run the build inside the Docker slave
-     tasks:
      shell: "java -jar jenkins-cli.jar -s tcp://192.168.2.204:4243 build builds/$BUILD_NUMBER --username jenkins --password jenkins"
