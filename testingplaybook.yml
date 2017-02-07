@@ -3,8 +3,8 @@
    - name: Hi. I ensure connecting to the Docker machine
      ping:
    - name: Create slave Docker bibinwilson
-     docker:
-      docker_host: tcp://192.168.2.204:4243
+     docker_container:
+      docker_host: "tcp://192.168.2.204:4243"
       image: bibinwilson/jenkins-slave
       state: present
       name: dockerslave
