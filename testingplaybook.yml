@@ -1,7 +1,6 @@
 - hosts: all
   tasks:
    - name: Hi. I ensure connecting to the machine
-     host: docker-slave
      ping:
    - name: Create slave Docker bibinwilson
      docker-container:
