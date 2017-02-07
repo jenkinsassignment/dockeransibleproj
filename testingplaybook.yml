@@ -3,7 +3,7 @@
    - name: Hi. I ensure connecting to the machine
      ping:
    - name: Create slave Docker bibinwilson
-     docker-container:
+     docker_container:
       docker_host: tcp://192.168.2.204:4243
       image: bibinwilson/jenkins-slave
       state: present
