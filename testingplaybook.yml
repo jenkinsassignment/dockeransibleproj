@@ -6,6 +6,6 @@
      docker_container:
       docker_host: "tcp://192.168.2.204:4243"
       image: bibinwilson/jenkins-slave
-      state: running
+      state: started
       name: dockerslave
       command: "java -jar jenkins-cli.jar -s tcp://192.168.2.204:4243 build builds/$BUILD_NUMBER --username jenkins --password jenkins"
