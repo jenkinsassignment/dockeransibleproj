@@ -1,4 +1,5 @@
-- tasks:
+- hosts: all
+  tasks:
    - name: Hi. I ensure connecting to the machine
      host: docker-slave
      ping:
