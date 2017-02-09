@@ -1,6 +1,7 @@
 [docker-slave]
 192.168.1.102
 [docker-slave:vars]
+ansible_ssh_host=192.168.1.102
 ansible_ssh_user=vagrant
 ansible_ssh_pass=vagrant
 ansible_sudo_pass=vagrant
