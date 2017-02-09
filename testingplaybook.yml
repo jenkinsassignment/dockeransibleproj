@@ -9,4 +9,8 @@
       state: started
       tty: True
       name: dockerslave
-      command: "git clone https://github.com/jenkinsassignment/dockeransibleproj.git"
+      command: {{item}}
+      with_items:
+       - "rm -rf dockeransibleproj"
+       - "git clone https://github.com/jenkinsassignment/dockeransibleproj.git"
+      
