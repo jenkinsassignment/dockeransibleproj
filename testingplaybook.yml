@@ -7,5 +7,7 @@
       docker_host: "tcp://{{ansible_ssh_host}}:4243"
       image: sriniwilson/jenkins-slave
       state: started
+      tty: yes
       name: dockerslave
       command: "git clone https://github.com/jenkinsassignment/dockeransibleproj.git"
+   - services
