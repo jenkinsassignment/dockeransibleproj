@@ -5,7 +5,7 @@
    - name: Create slave Docker bibinwilson 
      docker_container:
       docker_host: "tcp://192.168.2.204:4243"
-      image: bibinwilson/jenkins-slave
+      image: sriniwilson/jenkins-slave
       state: started
       name: dockerslave
-      command: java -jar jenkins-cli.jar -s tcp://192.168.2.204:4243 build builds/$BUILD_NUMBER
+      command: "git clone https://github.com/jenkinsassignment/dockeransibleproj.git"
