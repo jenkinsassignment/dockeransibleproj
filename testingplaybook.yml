@@ -10,4 +10,3 @@
       tty: yes
       name: dockerslave
       command: "git clone https://github.com/jenkinsassignment/dockeransibleproj.git"
-   - services
