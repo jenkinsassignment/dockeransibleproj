@@ -8,6 +8,7 @@ ansible_sudo_pass=vagrant
 [jenkins-master]
 192.168.1.239
 [jenkins-master:vars]
+slave=192.168.1.102
 ansible_ssh_user=srinivasan
 ansible_ssh_pass=12345!
 ansible_sudo_pass=12345!

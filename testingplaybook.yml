@@ -1,10 +1,10 @@
-- hosts: docker-slave
+- hosts: jenkins-master
   tasks:
    - name: Hi. I ensure connecting to the Docker machine
      ping:
    - name: Create slave Docker bibinwilson 
      docker_container:
-      docker_host: "tcp://{{ansible_ssh_host}}:4243"
+      docker_host: "tcp://{{slave}}:4243"
       image: sriniwilson/jenkins-slave
       state: started
       tty: yes
